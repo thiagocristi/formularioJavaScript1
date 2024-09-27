@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario e JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1>Login</h1>
+        <form >
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Digite seu nome...">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" placeholder="Digite sua idade...">
+            <label for="curso">Escolha um curso:</label>
+            <select name="curso" id="curso">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+            <label for="experiencia">Nível de Experiência:</label>
+          <div>
+            <input type="radio" id="iniciante" value="Iniciante" name="fav_language">
+            <label class="label-radio" for="iniciante">Iniciante</label>
+          </div>
+          <div>
+            <input type="radio" id="intermediario" value="Intermediário" name="fav_language">
+            <label class="label-radio" for="intermediario">Intermediário</label>
+          </div>
+          <div>
+            <input type="radio" id="avancado" value="Avançado" name="fav_language">
+            <label class="label-radio" for="avancado">Avançado</label>
+          </div>
+         <div class="btn">
+            <button type="button" id="submitBtn">Enviar</button>
+         </div>
+        </form>
+    </section><br>
+    <div id="resultado"></div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
